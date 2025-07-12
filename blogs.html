@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog Posts | Raghvender</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog posts by Raghvender on generative modeling, AI, and research." />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components/header.css" />
+  <link rel="stylesheet" href="styles/components/footer.css" />
+  <link rel="stylesheet" href="styles/components/sidebar.css" />
+  <link rel="stylesheet" href="styles/components/blog.css" />
+
+  <!-- Markdown Parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body data-page="blog-index">
+  <div class="site-wrapper">
+    <header id="header" role="banner"></header>
+
+    <div class="main-layout">
+      <main class="main-content">
+        <section class="blog-index" id="blog-container">
+          <h1>📚 Blog Posts</h1>
+          <ul id="blog-list" class="blog-list"></ul>
+        </section>
+      </main>
+      <aside id="sidebar" role="complementary"></aside>
+    </div>
+
+    <footer id="footer" role="contentinfo"></footer>
+  </div>
+
+  <!-- Component Loader -->
+  <script type="module" src="scripts/main.js"></script>
+
+  <!-- Blog Logic -->
+  <script>
+    const container = document.getElementById('blog-container');
+    const urlParams = new URLSearchParams(window.location.search);
+    const slug = urlParams.get('post');
+
+    if (slug) {
+      // Load individual post
+      fetch(`assets/blogs/${slug}.md`)
+        .then(res => {
+          if (!res.ok) throw new Error("Blog not found");
+          return res.text();
+        })
+        .then(md => {
+          container.innerHTML = `
+            <article class="blog-post">
+              ${marked.parse(md)}
+            </article>
+            <p><a href="blogs.html">← Back to blog index</a></p>
+          `;
+        })
+        .catch(err => {
+          container.innerHTML = `<p>Error loading post: ${err.message}</p>`;
+        });
+
+    } else {
+      // Load blog index
+      fetch('assets/blogs/blogposts.json')
+        .then(res => res.json())
+        .then(posts => {
+          const list = document.getElementById('blog-list');
+          posts.forEach(post => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+              <a href="blogs.html?post=${post.slug}">${post.title}</a>
+              <span class="date">${post.date}</span>
+            `;
+            list.appendChild(li);
+          });
+        })
+        .catch(error => {
+          container.innerHTML = '<p>Could not load blog list.</p>';
+        });
+    }
+  </script>
+</body>
+</html>
