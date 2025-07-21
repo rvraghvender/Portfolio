@@ -15,6 +15,9 @@
 
   <!-- Markdown Parser -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- MathJax for rendering LaTeX -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 <body data-page="blog-index">
   <div class="site-wrapper">
@@ -56,6 +59,11 @@
             </article>
             <p><a href="blogs.html">← Back to blog index</a></p>
           `;
+
+          // Trigger MathJax rendering after the content is inserted
+          if (window.MathJax) {
+            MathJax.typesetPromise();
+          }
         })
         .catch(err => {
           container.innerHTML = `<p>Error loading post: ${err.message}</p>`;
