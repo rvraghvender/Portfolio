@@ -4,14 +4,19 @@
     "title": "1. Understanding Variational Autoencoders (VAE)",
     "date": "2024-04-22"
   },
+    {
+    "slug": "VQ-VAE",
+    "title": "2. Vector-Quantized Variational Autoencoders (VAE)",
+    "date": "2024-10-29"
+  },
   {
     "slug": "diffusion",
-    "title": "2. Intro to Diffusion Models for Battery Degradation",
+    "title": "3. Intro to Diffusion Models for Battery Degradation",
     "date": "Coming soon"
   },
   {
     "slug": "transformers",
-    "title": "3. Latent Transformers in Generative Modeling",
+    "title": "4. Latent Transformers in Generative Modeling",
     "date": "Planned"
   }
 ]
