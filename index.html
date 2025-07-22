@@ -13,36 +13,81 @@
   <link rel="stylesheet" href="styles/components/header.css" />
   <link rel="stylesheet" href="styles/components/footer.css" />
   <link rel="stylesheet" href="styles/components/sidebar.css" />
+  <link rel="stylesheet" href="styles/components/home.css" />
 
-  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script type="module" src="scripts/latentField.js" defer></script>
+  
+  <!-- Font Awesome (for icons) -->
+<!-- Add this in the <head> section of index.html -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body data-page="home">
   <div class="site-wrapper">
 
+
     <header id="header" role="banner"></header>
 
-    <div class="main-layout">
+    <main class="hero-container">
+      <canvas id="latentField"></canvas>
 
-      <aside id="sidebar" role="complementary"></aside>
-      <main class="main-content" role="main">
-        <section>
+      <div class="generative-bg">
+        <span>latent</span>
+        <span>diffusion</span>
+        <span>transformer</span>
+        <span>prior</span>
+        <span>emergence</span>
+        <span>generative</span>
+        <span>sampling</span>
+        <span>representation</span>
+        <span>autoregressive</span>
+        <span>multimodal</span>
+      </div>
+
+
+      <section class="hero-content">
+
+        <div class="hero-image">
+
+          <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill= "#0f172a">
+              <animate attributeName="d" dur="10s" repeatCount="indefinite"
+                values="
+                  M44.8,-77.1C56.6,-67.6,64.3,-56.4,70.5,-44.4C76.8,-32.3,81.5,-19.2,83.7,-5.4C85.8,8.3,85.3,22.7,78.8,35C72.2,47.4,59.5,57.6,46.2,63.9C32.8,70.1,16.4,72.5,1.1,70.9C-14.2,69.3,-28.3,63.6,-39.8,55.6C-51.2,47.5,-60,37.1,-67.7,24.8C-75.3,12.4,-81.8,-1.9,-79.8,-14.8C-77.7,-27.7,-67,-39.3,-55.4,-49.5C-43.9,-59.7,-31.6,-68.6,-17.5,-75.2C-3.4,-81.8,12.6,-86,27.6,-82.9C42.6,-79.9,56.9,-69.7,44.8,-77.1Z;
+                  
+                  M36.1,-67.7C47.7,-61.7,58.4,-52.6,67.3,-41.7C76.2,-30.9,83.2,-18.2,84.6,-4.9C86.1,8.5,81.9,22.4,74.8,34.4C67.7,46.4,57.8,56.6,45.9,63.6C34,70.6,20,74.5,6.1,67.4C-7.7,60.2,-15.4,41.9,-25.2,30.5C-35,19.1,-46.8,14.6,-53.5,5.7C-60.3,-3.2,-62.1,-17.4,-59.8,-32.3C-57.5,-47.3,-51.1,-63,-39.4,-71.7C-27.7,-80.3,-10.8,-81.9,3.7,-87.2C18.1,-92.4,36.2,-101.6,36.1,-67.7Z;
+                  
+                  M44.8,-77.1C56.6,-67.6,64.3,-56.4,70.5,-44.4C76.8,-32.3,81.5,-19.2,83.7,-5.4C85.8,8.3,85.3,22.7,78.8,35C72.2,47.4,59.5,57.6,46.2,63.9C32.8,70.1,16.4,72.5,1.1,70.9C-14.2,69.3,-28.3,63.6,-39.8,55.6C-51.2,47.5,-60,37.1,-67.7,24.8C-75.3,12.4,-81.8,-1.9,-79.8,-14.8C-77.7,-27.7,-67,-39.3,-55.4,-49.5C-43.9,-59.7,-31.6,-68.6,-17.5,-75.2C-3.4,-81.8,12.6,-86,27.6,-82.9C42.6,-79.9,56.9,-69.7,44.8,-77.1Z;" />
+            </path>
+          </svg>
+
+          <img src="assets/images/profile.jpg" alt="Raghvender Profile Photo" />
+        </div>
+
+        <div class="hero-text">
+          <div id="thought-generator">
+            <span id="thought-text">"Learning structure before precision."</span>
+          </div>
+
           <h1>👋 Hi, I'm Raghvender</h1>
+          <h2>AI Research Engineer</h2>
           <p>
-            I’m an AI Research Engineer working at the intersection of generative modeling and materials science. I
-            design and apply cutting-edge models — VAEs, diffusion, and beyond — to predict battery degradation over its
-            lifecycle.
+            I build generative models — VAEs, diffusion, transformers — to accelerate scientific discovery, particularly
+            in battery lifecycle prediction.
           </p>
-          <p>
-            This site hosts my <a href="about.html">background</a>, <a href="publications.html">publications</a>, <a
-              href="projects.html">projects</a>, and blog posts on generative AI and scientific modeling.
-          </p>
-        </section>
-      </main>
+          <div class="hero-buttons">
+            <a href="about.html" class="button">About Me</a>
+            <a href="projects.html" class="button outline">Projects</a>
+            <a href="assets/docs/Raghvender_CV_FR.pdf" class="button outline">Download CV</a>
+          </div>
+        </div>
 
-    </div>
+      </section>
+
+    </main>
 
     <footer id="footer" role="contentinfo"></footer>
   </div>

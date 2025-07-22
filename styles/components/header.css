@@ -76,6 +76,7 @@
 /* Hover state */
 .cv-button:hover {
   background-color: #005a99;
+  color: white;
 }
 
 /* Dark mode icon button */
