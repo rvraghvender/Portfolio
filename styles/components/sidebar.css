@@ -14,18 +14,14 @@
   overflow-y: auto;
 }
 
-/* Mobile: hide sidebar */
+
 @media (max-width: 768px) {
   #sidebar {
     display: none;
   }
-
-  .hero-image img {
-    max-width: 70%;
-    max-height: 70%;
-    margin: 6rem 5.9rem;
-  }
 }
+
+
 
 /* Tablet: full-width stacked sidebar */
 @media (max-width: 1024px) {

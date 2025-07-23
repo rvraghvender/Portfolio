@@ -7,15 +7,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  border-bottom: 1px solid #444;
 }
 
 .nav-links {
@@ -30,7 +22,7 @@
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
   transition: color 0.2s ease;
   font-family:sans-serif;
@@ -154,5 +146,9 @@
 
   .mobile-menu {
     display: flex;
+  }
+
+  .container {
+    max-width: 100%;
   }
 }

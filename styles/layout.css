@@ -17,7 +17,6 @@
   margin: 0 auto;
   gap: 2rem;
   font-size: 1.2rem;
-  /* min-height: calc(100vh - 5rem);  ✅ ensures layout stretches to viewport */
   min-height: calc(100vh - 190px); /* or ~92vh */
 
 }
@@ -40,6 +39,10 @@
   .main-content {
     width: 100%;
     padding: 1rem 0.5rem;
+  }
+
+  .site-wrapper {
+    min-height: auto; /* Adjust for mobile header */
   }
 }
 

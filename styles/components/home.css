@@ -199,3 +199,41 @@ canvas#latentField {
 }
 
 
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0rem 0rem 0rem;
+    width: 70%;
+    height: auto;
+  }
+
+  .hero-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    margin:  0 0 0 0;
+    display: block;
+  }
+
+  .hero-image .blob {
+    width: 100%;
+    height: auto;
+    top: -10px;
+    left: -10px;
+    transform: scale(1.05);
+  }
+
+
+  .hero-text {
+    max-width: 99%;
+    text-align: center;
+  }
+}
