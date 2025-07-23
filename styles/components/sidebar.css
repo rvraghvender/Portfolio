@@ -19,6 +19,12 @@
   #sidebar {
     display: none;
   }
+
+  .hero-image img {
+    max-width: 70%;
+    max-height: 70%;
+    margin: 6rem 5.9rem;
+  }
 }
 
 /* Tablet: full-width stacked sidebar */
