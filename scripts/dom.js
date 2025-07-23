@@ -6,7 +6,6 @@ export async function loadComponent(id, path) {
   const html = await res.text();
   el.innerHTML = html;
 
-  // After header is loaded, wire up mobile menu
   if (id === 'header') {
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -16,7 +15,31 @@ export async function loadComponent(id, path) {
         mobileMenu.classList.toggle('hidden');
       });
     }
-  }
 
-  // Same idea if you want footer/sidebar interactivity later
+    // ✅ Add dark mode toggle here
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    function updateThemeIcon(isDark) {
+      if (toggleButton) {
+        toggleButton.textContent = isDark ? '☀️' : '🌙';
+      }
+    }
+
+    if (toggleButton) {
+      toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+        updateThemeIcon(isDark);
+        localStorage.setItem('darkMode', isDark);
+      });
+    }
+
+    const savedPreference = localStorage.getItem('darkMode') === 'true';
+    if (savedPreference) {
+      body.classList.add('dark-mode');
+    }
+
+    updateThemeIcon(savedPreference);
+  }
 }

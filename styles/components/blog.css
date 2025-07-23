@@ -1,7 +1,27 @@
+/* 🎨 Theme Variables */
+:root {
+  --blog-title: #1f2937;
+  --blog-link: #005a99;
+  --blog-date: #777;
+  --blog-border: #e0e0e0;
+  --blog-bg: #ffffff;
+  --blog-text: #1a1a1a;
+}
+
+body.dark-mode {
+  --blog-title: #f1f5f9;
+  --blog-link: #66b2ff;
+  --blog-date: #aaa;
+  --blog-border: #444;
+  --blog-bg: #1e1e1e;
+  --blog-text: #e2e2e2;
+}
+
+/* 📝 Blog Index Styling */
 .blog-index h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #1f2937;
+  color: var(--blog-title);
   text-align: center;
 }
 
@@ -9,11 +29,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: var(--blog-bg);
+  color: var(--blog-text);
 }
 
 .blog-list li {
   padding: 1rem 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--blog-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +43,7 @@
 
 .blog-list a {
   font-size: 1.1rem;
-  color: #005a99;
+  color: var(--blog-link);
   font-weight: 500;
 }
 
@@ -31,12 +53,10 @@
 
 .blog-list .date {
   font-size: 0.85rem;
-  color: #777;
+  color: var(--blog-date);
 }
 
-
-
-/* ✅ Mobile Responsiveness */
+/* 📱 Mobile Responsiveness */
 @media (max-width: 768px) {
   .blog-index h1 {
     font-size: 1.5rem;
@@ -46,19 +66,24 @@
 
   .blog-list li {
     padding: 1.25rem 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--blog-border);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.3rem;
   }
-  
+
   .blog-list a {
     font-size: 1rem;
   }
 
   .blog-list .date {
     font-size: 0.8rem;
-    color: #999;
+    color: var(--blog-date);
   }
+}
+
+.main-layout {
+  width: 100%;
+  max-width: 1340px;
 }
