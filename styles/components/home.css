@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   /* min-height: 99vh;*/
-   min-height: calc(100vh - 174px); /* or ~92vh */
+   min-height: calc(100vh - 110px); /* or ~92vh */
   background: linear-gradient(135deg, rgba(59,130,246,0.05), rgba(99,102,241,0.1));
   padding: 2rem;
   overflow: hidden;
