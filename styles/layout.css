@@ -1,0 +1,57 @@
+/* 📐 Overall Layout Container */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  background-color: #fff;
+  padding-top: 5rem;
+}
+
+/* 🧱 Main Layout: Sidebar + Content side-by-side */
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;            /* ✅ ensures sidebar and content match height */
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+  font-size: 1.2rem;
+  /* min-height: calc(100vh - 5rem);  ✅ ensures layout stretches to viewport */
+  min-height: calc(100vh - 190px); /* or ~92vh */
+
+}
+
+/* 📄 Main content grows and fills */
+.main-content {
+  flex: 1;
+  /* padding: 1.5rem; */
+}
+
+/* 📱 Mobile: stack layout vertically */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* 🧾 Tablet: stacked sidebar and content */
+@media (max-width: 1024px) {
+  .main-layout {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .main-content {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+  }
+}

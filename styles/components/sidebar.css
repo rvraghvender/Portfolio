@@ -1,25 +1,39 @@
-.site-sidebar {
-    background-color: #2c2c2c;
-    width: 250px;
-    padding: 2rem 1.5rem 0rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 1rem;
-    color: #fff;
-    position: fixed;
-    height: 100vh;
-    padding-top: 2rem;
-    /* top: 0; */
-    left: 90px;
-    z-index: 999;
-    overflow-y: auto;
+#sidebar {
+  background-color: #2c2c2c;
+  width: 250px;
+  padding: 2rem 1.5rem 0rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: #fff;
+  height: 100%;
+  flex-shrink: 0;
+  position: relative; /* no more fixed! */
+  z-index: 1;
+  overflow-y: auto;
 }
+
+/* Mobile: hide sidebar */
+@media (max-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+/* Tablet: full-width stacked sidebar */
+@media (max-width: 1024px) {
+  #sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
 
 .sidebar-section {
     margin-bottom: 1.5rem;
 }
-
 
 
 /* -------------------------------------------------------------*/
@@ -109,4 +123,14 @@
 .sidebar-links i.fab,
 .sidebar-links i.fa-brands {
   font-weight: 400;
+}
+
+
+@media (min-width: 1025px) {
+  #sidebar {
+    /* position: sticky; */
+    /* top: 5rem; header height offset */
+    height: stretch;
+    /* align-self: stretch; ensure sidebar stretches to fill height */
+  }
 }

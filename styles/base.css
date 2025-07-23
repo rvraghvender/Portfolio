@@ -28,31 +28,3 @@ a:hover {
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-
-/* 🧱 Layout Foundation */
-.site-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #fff;
-    padding-top: 5rem;
-}
-
-.main-layout {
-    display: flex;
-    flex: 1;
-    width: 90%;
-    max-width: 1200px;
-    margin-left: 400px;
-    align-items: flex-start;
-    font-size: 1.2rem;
-    /* padding: 2rem 1rem; */
-}
-
-.main-content {
-    flex: 1;
-    padding: 1.5rem;
-}
-
-
-
