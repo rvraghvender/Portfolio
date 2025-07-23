@@ -72,6 +72,32 @@
           if (window.MathJax) {
             MathJax.typesetPromise();
           }
+
+        // Inject Giscus
+          requestAnimationFrame(() => {
+            const giscus = document.createElement('script');
+            giscus.src = 'https://giscus.app/client.js';
+            giscus.setAttribute('data-repo', 'rvraghvender/rvraghvender.github.io'); // ✅ Change if needed
+            giscus.setAttribute('data-repo-id', 'R_kgDOPLuN7g');                 // ✅ From giscus.app
+            giscus.setAttribute('data-category', 'Blog Comments');               // ✅ Your discussion category
+            giscus.setAttribute('data-category-id', 'DIC_kwDOPLuN7s4CtT9h');        // ✅ From giscus.app
+            giscus.setAttribute('data-mapping', 'pathname');
+            giscus.setAttribute('data-strict', '0');
+            giscus.setAttribute('data-reactions-enabled', '1');
+            giscus.setAttribute('data-emit-metadata', '0');
+            giscus.setAttribute('data-input-position', 'bottom');
+            giscus.setAttribute('data-theme', 'light');
+            giscus.setAttribute('data-lang', 'en');
+            giscus.setAttribute('crossorigin', 'anonymous');
+            giscus.async = true;
+            
+            const giscusContainer = document.getElementById('giscus_thread');
+            if (giscusContainer) {
+              giscusContainer.appendChild(giscus);
+            } else {
+              console.error('Giscus container not found.');
+            }
+          });
         })
         .catch(err => {
           container.innerHTML = `<p>Error loading post: ${err.message}</p>`;
@@ -99,3 +125,6 @@
   </script>
 </body>
 </html>
+
+
+
