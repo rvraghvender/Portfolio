@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Structure of amorphous TeO2 revisited: A hybrid functional ab initio molecular dynamics study",
+    "authors": [
+      "Raghvender Raghvender",
+      "Assil Bouzid",
+      "Sylvian Cadars",
+      "David Hamani",
+      "Philippe Thomas",
+      "Olivier Masson"
+    ],
+    "venue": "Physical Review B 106 (17), 174201 ",
+    "doi_link": "https://doi.org/10.1103/PhysRevB.106.174201",
+    "abstract": "The atomic-scale structure of glassy TeO2 has been the subject of a longstanding debate. We resort to first-principles molecular dynamics with a careful choice of the exchange and correlation functional to achieve a good agreement with experimental findings for the topology of glassy and molten TeO2. We show that only molecular dynamics at the hybrid functional level of theory is able to reproduce a correct description of the medium-range order in the glass. Based on a Wannier-function decomposition of the electronic structure, we show that the coordination number of tellurium is around 4 and that there is a non-negligible fraction of nonbridging oxygen atoms. An analysis of the net atomic charge distribution shows that an increase of the Te-O-Te bridge asymmetry strongly correlates with the charge on the oxygen atom. Additionally, we find that the oxygen bridge asymmetry increases with temperature, which strengthens the short-range disorder in molten TeO2, and consequently lowers the coordination number of Te. These results provide a revisited picture of the TeO2 network connectivity and its evolution as a function of temperature."
+  },
+
+  {
+    "title": "A Buckingham interatomic potential for thallium oxide (Tl2O): Application to the case of thallium tellurite glasses",
+    "authors": [
+      "Raghvender Raghvender",
+      "Assil Bouzid",
+      "David Hamani",
+      "Philippe Thomas",
+      "Olivier Masson"
+    ],
+    "venue": "Computational Materials Science 201 (2021) 110891",
+    "doi_link": "https://doi.org/10.1016/j.commatsci.2021.110891",
+    "abstract": " An interatomic potential for simulating the structural properties of thallium (I) oxide (with oxidation state +1) based compounds has been developed by fitting to the experimental crystalline structures of α-Tl2Te2O5, Tl2Te3O7 and Tl2TeO3 simultaneously. The obtained potentials are subsequently verified and validated by optimizing additional Tl(I)−O based compounds, leading to a good agreement of the lattice constants with experimental data. Amorphous (TlO0.5)x − (TeO2)1-x systems where then produced by classical molecular dynamics and their structural properties compared to experimental measurements."
+  },
+
+  {
+    "title": "Nonlinear optical properties of glassy TeO2: ab initio modeling of χ(3) and Hyper Raman spectra",
+    "authors": [
+      "Evgenii M. Roginskii",
+      "Raghvender Raghvender",
+      "Olivier Noguera",
+      "Philippe Thomas",
+      "Olivier Masson",
+      "Assil Bouzid"
+    ],
+    "venue": "Physica B: Condensed Matter 699 (2024) 416768",
+    "doi_link": "https://doi.org/10.1016/j.physb.2024.416768",
+    "abstract": "The nonlinear optical properties of amorphous tellurium oxide is studied in a framework of computational technique based on the ab initio quantum-chemical calculations. The calculated values of refractive index and third-order nonlinear susceptibility are in a very good agreement with experimental data. The origin of the high nonlinear properties of TeO2 is attributed, in general, to the hyperpolarizability of Te atoms electron lone pairs and to the hyperpolarizability of electronic density localized on bonds of the asymmetric Te-O-Te bridges in part. The computational technique is extended on Hyper Raman spectroscopy including scattering on longitudinal modes. The spectra were calculated for both crystalline and glassy TeO2 with a very good reproduction of experimental data. An extra bands inactive in classical Raman spectroscopy are studied using this approach. The most intense high-frequency band in the spectra of paratellurite is attributed to anti-symmetric stretching of long-short bonds in TeO4 disphenoid with A2 symmetry. The influence of the structural unit configuration on the band position in Hyper Raman spectra is established. The best agreement between calculated phonon spectrum and experimental data is obtained using hybrid functional approach, which explains the strong correlation on valence electron states of Te atoms. The strong dependence of LO modes intensity in Hyper Raman spectra on third order nonlinear susceptibility is obtained and explained. The reported technique can be easily extended on a big family of binary and ternary compounds."
+  },
+
+  {
+    "title": "Ab Initio Study of the Raman Spectra of Amorphous Oxides: Insights into the Boson Peak Nature in Glassy TeO2",
+    "authors": [
+      "Evgenii M. Roginskii",
+      "Raghvender Raghvender",
+      "Olivier Noguera",
+      "Philippe Thomas",
+      "Olivier Masson",
+      "Assil Bouzid"
+    ],
+    "venue": "Physica Status Solidi: Rapid Research Letters 17 4 (2023) 2200505",
+    "doi_link": "https://doi.org/10.1002/pssr.202200505",
+    "abstract": "Herein, a computational technique that combines density functional theory and the finite difference method is presented to enable the calculation of the Raman spectra of large models of oxide glasses. The calculated Raman spectra of amorphous TeO2 are found to be in excellent agreement with the experimental data. A strong peak in the low-frequency range of the Raman spectra is observed and attributed to the Boson peak. According to atomic-scale analysis, this peak is assigned to collective vibrations of nanoclusters that are formed by the structural units of the glass. Two general factors that influence the Boson peak intensity are established. The first factor concerns the intensity of the low-frequency peak in TeO2 vibrational density of states. The second factor is related to the low-frequency vibrational state occupancy at fixed temperature, which obeys the Bose?Einstein statistic. It is found that even a small shift toward high frequencies leads to a significant decay of the vibrational state occupancy. This correlates quite well when the Raman spectra of TeO2 glass are compared to the spectra of fused silica. The technique can be readily applied to the large set of amorphous systems."
+  }, 
+
+   {
+    "title": "Ab-initio study of the structure of tellurium-oxide based glasses: a step forward in establishing the structure-properties relationships",
+    "authors": [
+      "Raghvender Raghvender"
+    ],
+    "venue": "Université de Limoges (2023)",
+    "doi_link": "https://theses.hal.science/tel-04126904",
+    "abstract": "TeO2 glasses exhibit third order non-linear optical properties 50 times higher than conventional silicate glasses, making them promising candidates for frequency conversion mechanism, optical switches and other applications. The existence of 5s2 lone pair on Te atom in the glassy network is at the origin of these outstanding properties. Despite the fact that several studies have investigated the structure of TeO2 glass, the short and medium range orders in this material remain a matter of debate. In particular, the effect of adding a modifier oxide into the glassy TeO2 system has show a strong effect on its optical, mechanical and chemical properties. Yet, a comprehensive study on the atomic scale structure evolution in these glasses and its correlation to the material properties is still lacking. In this thesis, we resort to first-principles molecular dynamics techniques to produce quantitative pure TeO2, binary Tl2O-TeO2 and ternary TiO2-Tl2O-TeO2 amorphous models featuring a good agreement with the experimental measurements. These models are then used to study the network topology of TeO2-based systems as a function of the modifier concentration with a particular focus on the short-range order correlated to the electronic properties of the material. Furthermore, we study the vibrational and non-linear optical properties of TeO2-based glasses in order to improve our understanding of the structure-properties relationship."
+  },
+
+  {
+    "title": "Atomic scale structure and dynamical properties of (TeO2)_{1-x}-(Na2O)_{x} glasses through first-principles modeling and XRD measurementss",
+    "authors": [
+      "Firas Shauib",
+      "Assil Bouzid",
+      "Remi Piotrowski",
+      "Gaelle Delaizir",
+      "Pierre-Marie Geffroy",
+      "David Hamani",
+      "Raghvender Raghvender",
+      "Steve Dave Wansi Wendji",
+      "Carlo Massobrio",
+      "Mauro Boero",
+      "Guido Ori",
+      "Philippe Thomas",
+      "Olivier Masson"
+    ],
+    "venue": "arXiv preprint arXiv:2506.04137",
+    "doi_link": "https://doi.org/10.48550/arXiv.2506.04137",
+    "abstract": "We resort to first-principles molecular dynamics, in synergy with experiments, to study structural evolution and Na cation diffusion inside (TeO)-(NaO) (x = 0.10-0.40) glasses. Experimental and modeling results show a fair quantitative agreement in terms of total X-ray structure factors and pair distribution functions, thereby setting the ground for a comprehensive analysis of the glassy matrix evolution. We find that the structure of (TeO)-(NaO) glasses deviates drastically from that of pure TeO glass. Specifically, increasing the NaO concentration leads to a reduction of the coordination number of Te atoms, reflecting the occurrence of a structural depolymerization upon introduction of the NaO modifier oxide. The depolymerization phenomenon is ascribed to the transformation of Te-O-Te bridges into terminal Te-O non bridging oxygen atoms (NBO). Consequently, the concentration of NBO increases in these systems as the concentration of the modifier increases, accompanied by a concomitant reduction in the coordination number of Na atoms. The structure factors results show a prominent peak at 1.4 A, that becomes more and more pronounced as the Na2O concentration increases. The occurrence of this first sharp diffraction peak is attributed to the growth of Na-rich channels inside the amorphous network, acting as preferential routes for alkali-ion conduction inside the relatively stable Te-O matrix. These channels enhance the ion mobility."
+  }  
+
+]
