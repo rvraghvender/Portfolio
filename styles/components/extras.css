@@ -1,0 +1,57 @@
+/* 🌗 Theme Variables */
+:root {
+  --card-bg: #f9f9f9;
+  --card-subtext: #666;
+}
+
+body.dark-mode {
+  --card-bg: #333;
+  --card-subtext: #aaa;
+}
+
+/* -------------------- */
+
+.extras-section {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+.extras-section h1, .extras-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.gallery figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.02);
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery figcaption {
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--card-subtext);
+  text-align: center;
+}
